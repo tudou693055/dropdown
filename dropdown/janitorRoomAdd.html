@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>添加门卫</title>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <script src="jquery-1.12.4.min.js"></script>
+  <script src="dropdown.js"></script>
+  <link href="fswrapstyle.css" rel="stylesheet" media="all">
+</head>
+<body>
+
+<div class="layui-form layuiFormLeft140" lay-filter="layuiadmin-form-janitorRoom" style="padding: 20px 30px 0 0;">
+  <div class="layui-form-item">
+    <label class="layui-form-label"><span class="layui-word-red">*</span>下拉多选</label>
+    <div class="layui-input-block" id="multipleSelect">
+      <input type="text" value="" id="ids" hidden>
+       <select id="organId" name="organId" multiple="multiple" >
+      　　<option value="1">选项1</option>
+      　　　　<option value="2">选项1</option>
+      　　　　<option value="3">选项1</option>
+      　　　　<option value="4">选项1</option>
+      　　　　<option value="5">选项1</option>
+      　　　　<option value="6">选项1</option>
+      　　　　<option value="7">选项1</option>
+      　　</select>
+    </div>
+  </div>
+
+</div>
+<script>
+$(function () {
+    $("#organId").fSelect();
+})
+
+
+</script>
+</body>
+</html>
